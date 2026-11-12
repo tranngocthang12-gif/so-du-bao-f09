@@ -1,0 +1,11 @@
+Kết quả chạy thử công thức chấm bằng dữ liệu giả (1.000 lần mỗi dòng, một mã, thị trường độc lập cân bằng 50%, dùng chính hàm score() của cham_diem.py), ngày 12/11/2026:
+
+AI luôn nói 0,50             gợi ý (G3):   0.0%   dừng vô vọng@30:   0.0%   (iii)@60:   0.0%   dừng hết 120: 100.0%
+kiểu A, đúng hướng 50%       gợi ý (G3):   3.1%   dừng vô vọng@30:  18.7%   (iii)@60:  14.6%   dừng hết 120:  63.6%
+kiểu A, 60%                  gợi ý (G3):  48.1%   dừng vô vọng@30:   3.0%   (iii)@60:   1.2%   dừng hết 120:  47.7%
+kiểu A, 65%                  gợi ý (G3):  83.7%   dừng vô vọng@30:   0.6%   (iii)@60:   0.2%   dừng hết 120:  15.5%
+kiểu B, 60%                  gợi ý (G3):  48.1%   dừng vô vọng@30:   3.0%   (iii)@60:   1.2%   dừng hết 120:  47.7%
+kiểu B, 65%                  gợi ý (G3):  70.2%   dừng vô vọng@30:   1.7%   (iii)@60:   0.4%   dừng hết 120:  27.7%
+
+So với bảng L15 (luật v0.5): kiểu A 3/16/49/85%, kiểu B 25/48/70%, luôn 0,50 là 0%.
+15 phép thử của test_cham_diem.py đều đạt.
