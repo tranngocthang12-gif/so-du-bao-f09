@@ -1,0 +1,16 @@
+NĂM CÂU KẾT F-09 (bản đầy đủ cho khóa A; chỉ chừa chỗ điền số trong { }). Các chữ "chứng minh" và "lợi thế đầu tư" chỉ xuất hiện ở dạng phủ định. AI không tự viết tổng kết sau khi đã thấy điểm.
+
+(i) Gợi ý.
+Sau {n} phiên được chấm, AI thắng mốc 50% và mốc tần suất nền với cận dưới một phía 90% của hiệu điểm Brier lần lượt là {LB_b} và {LB_c}, và không kém quy tắc một bước (trung bình hiệu điểm {m_d}). Brier trung bình: AI {B_ai}; mốc 50% {B_b}; mốc tần suất nền {B_c}; quy tắc một bước {B_d}. Phiên lỗi: {a}. Phiên VOID: {v}. Số lần thử: {k}. Tỷ lệ phiên đứng giá của rổ: {flat}%. Có người kiểm độc lập ngoài chủ dự án: {có hoặc không}. Điều này không chứng minh AI có lợi thế đầu tư, và không chứng minh đây là lần hỏi đầu tiên của mỗi phiên.
+
+(ii) Không phân biệt được.
+Sau {n} phiên được chấm, không đủ bằng chứng để phân biệt AI với các mốc. Brier trung bình: AI {B_ai}; mốc 50% {B_b}; mốc tần suất nền {B_c}; quy tắc một bước {B_d}. Hiệu điểm so với mốc 50%: trung bình {m_b}, cận dưới {LB_b}, cận trên {UB_b}. Hiệu điểm so với mốc tần suất nền: trung bình {m_c}, cận dưới {LB_c}. Phiên lỗi: {a}. Phiên VOID: {v}. Số lần thử: {k}. Tỷ lệ phiên đứng giá của rổ: {flat}%. Có người kiểm độc lập ngoài chủ dự án: {có hoặc không}. Điều này không chứng minh AI vô giá trị, và không chứng minh đây là lần hỏi đầu tiên của mỗi phiên.
+
+(iii) Bất lợi.
+Sau {n} phiên được chấm, AI kém mốc 50% có ý nghĩa: cận trên một phía 90% của hiệu điểm Brier so với mốc 50% là {UB_b}, nhỏ hơn 0. Brier trung bình: AI {B_ai}; mốc 50% {B_b}; mốc tần suất nền {B_c}; quy tắc một bước {B_d}. Phiên lỗi: {a}. Phiên VOID: {v}. Số lần thử: {k}. Tỷ lệ phiên đứng giá của rổ: {flat}%. Có người kiểm độc lập ngoài chủ dự án: {có hoặc không}. Kết quả này không chứng minh đây là lần hỏi đầu tiên của mỗi phiên.
+
+(iv) Thắng mốc hằng số, không thắng quy tắc một bước.
+Sau {n} phiên được chấm, AI thắng mốc 50% và mốc tần suất nền (cận dưới {LB_b} và {LB_c}) nhưng kém quy tắc một bước (trung bình hiệu điểm {m_d}, nhỏ hơn 0). Brier trung bình: AI {B_ai}; mốc 50% {B_b}; mốc tần suất nền {B_c}; quy tắc một bước {B_d}. Phiên lỗi: {a}. Phiên VOID: {v}. Số lần thử: {k}. Tỷ lệ phiên đứng giá của rổ: {flat}%. Có người kiểm độc lập ngoài chủ dự án: {có hoặc không}. Điều này không chứng minh AI hơn một quy tắc đơn giản, và không chứng minh đây là lần hỏi đầu tiên của mỗi phiên.
+
+(v) Dừng vì vỡ kỷ luật.
+Đợt dừng ở phiên {x} vì {lý do}. Không kết luận gì về AI. Brier trung bình tính đến lúc dừng (chỉ để ghi, không dùng để kết luận): AI {B_ai}; mốc 50% {B_b}. Phiên lỗi: {a}. Phiên VOID: {v}. Số lần thử: {k}. Tỷ lệ phiên đứng giá của rổ: {flat}%. Có người kiểm độc lập ngoài chủ dự án: {có hoặc không}. Kết quả này không chứng minh đây là lần hỏi đầu tiên của mỗi phiên.

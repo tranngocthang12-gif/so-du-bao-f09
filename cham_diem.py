@@ -117,6 +117,11 @@ def parse_answer(text, tickers):
         out[t] = found[0] if len(found) == 1 else ""
     return out
 
+def is_missing_data_answer(text):
+    """L5 (ngoại lệ): câu trả lời đầu tiên đúng là một dòng 'THIẾU DỮ LIỆU' (không có xác suất nào)."""
+    lines = [ln.strip() for ln in (text or "").strip().splitlines() if ln.strip()]
+    return len(lines) == 1 and lines[0].rstrip(".").upper() == "THIẾU DỮ LIỆU" and "p_up" not in text
+
 def base_rates(up_list, i):
     """Mốc (c) và (d) cho phiên ở vị trí i của chuỗi up_list (chỉ dùng phiên < i, cửa sổ 120)."""
     lo = i - WINDOW

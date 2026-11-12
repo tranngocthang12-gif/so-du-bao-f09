@@ -1,0 +1,18 @@
+MẪU TỆP PHIÊN F-09. Tên tệp theo ngày dữ liệu: phien_{yyyy-mm-dd}.txt. Tạo trên máy bằng Notepad, đưa lên kho bằng nút Upload files (không gõ vào khung soạn của GitHub). Giữ nguyên các dòng có dấu ====.
+
+==== THONG TIN PHIEN ====
+ngay_du_lieu: {yyyy-mm-dd}
+phien_can_du_bao: {yyyy-mm-dd}
+mo_hinh: {tên mô hình đúng như hiển thị trong chat}
+gio_gui_cau_hoi: {hh:mm giờ Việt Nam}
+cac_ma: {MÃ1}, {MÃ2}, {MÃ3}
+lan_gui: {1 hoặc 2; 2 chỉ khi lần 1 AI trả lời đúng một dòng THIẾU DỮ LIỆU}
+
+==== KHUNG HOI VA KHOI DU LIEU (nguyên văn đã gửi, khung hỏi cố định rồi đến khối dữ liệu) ====
+{dán đúng nội dung đã gửi}
+
+==== CAU TRA LOI DAU TIEN CUA AI (nguyên văn, không sửa) ====
+{dán đúng câu trả lời đầu tiên}
+
+==== NEU LAN GUI 2: CAU TRA LOI CUA LAN GUI LAI (nguyên văn) ====
+{bỏ trống nếu lan_gui là 1}

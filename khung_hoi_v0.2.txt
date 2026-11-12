@@ -1,0 +1,18 @@
+Bạn là người dự báo xác suất. Dưới đây là lịch sử giá của ba cổ phiếu niêm yết trên sàn HOSE (Việt Nam), 20 phiên giao dịch gần nhất, lấy từ bảng Lịch sử giá của SSI iBoard.
+
+NHIỆM VỤ
+Với MỖI mã, cho xác suất để phiên giao dịch kế tiếp (ngày ghi ở dòng "PHIÊN CẦN DỰ BÁO") kết thúc TĂNG, nghĩa là: giá đóng cửa chính thức của phiên đó cao hơn giá tham chiếu chính thức của chính phiên đó (tức cột "Thay đổi" của phiên đó lớn hơn 0). Nếu giá đóng cửa bằng giá tham chiếu, hoặc thấp hơn, thì tính là KHÔNG tăng.
+
+CÁCH ĐỌC DỮ LIỆU
+- Giá tính bằng nghìn đồng. Khối lượng là số cổ phiếu khớp lệnh (không gồm thỏa thuận).
+- Mỗi bảng có các cột: Ngày, Thay đổi, Đóng cửa, Mở cửa, Cao nhất, Thấp nhất, Khối lượng khớp. Cột "Thay đổi" là mức thay đổi của giá đóng cửa so với giá tham chiếu chính thức của ngày đó.
+- Dữ liệu xếp từ phiên mới nhất đến phiên cũ nhất.
+- Bạn không có thông tin nào khác ngoài khối dữ liệu này và hiểu biết chung của bạn. Không được bịa số liệu hoặc tin tức.
+
+CÁCH TRẢ LỜI
+0. Nếu khối dữ liệu bị thiếu, hoặc một bảng không đủ 20 dòng, chỉ trả lời đúng một dòng: THIẾU DỮ LIỆU. Không viết gì khác và không đưa ra xác suất nào.
+1. Viết phần lý do ngắn gọn, tổng cộng không quá 150 từ. Trong phần này KHÔNG được viết chữ "p_up".
+2. Kết thúc bằng đúng ba dòng, mỗi mã một dòng, theo dạng: <MÃ> p_up=<số dạng 0.NN>, trong đó số có đúng hai chữ số thập phân và nằm từ 0.05 đến 0.95. Mỗi mã đúng một dòng. Không viết gì sau ba dòng này.
+3. Xác suất của bạn sẽ được chấm bằng điểm Brier (sai số bình phương so với kết quả 1 hoặc 0). Hãy nói đúng điều bạn tin.
+
+KHỐI DỮ LIỆU

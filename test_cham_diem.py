@@ -43,6 +43,16 @@ class HandExamples(unittest.TestCase):
         self.assertEqual(out["HPG"], "0.5")    # lấy được chuỗi nhưng valid_p sẽ loại
         self.assertEqual(out["VIX"], "")       # thiếu dòng -> hỏng
 
+class MissingData(unittest.TestCase):
+    def test_exact_line_is_missing_data(self):
+        self.assertTrue(cd.is_missing_data_answer("THIẾU DỮ LIỆU"))
+        self.assertTrue(cd.is_missing_data_answer("  THIẾU DỮ LIỆU.\n"))
+
+    def test_any_probability_blocks_resend(self):
+        self.assertFalse(cd.is_missing_data_answer("THIẾU DỮ LIỆU\nFPT p_up=0.52"))
+        self.assertFalse(cd.is_missing_data_answer("Phần khối dữ liệu đang bị khuyết, bạn vui lòng dán bổ sung."))
+        self.assertFalse(cd.is_missing_data_answer("FPT p_up=0.52\nVIC p_up=0.47\nHPG p_up=0.50"))
+
 class Classification(unittest.TestCase):
     def test_always_half_is_never_suggestive(self):
         n = 60

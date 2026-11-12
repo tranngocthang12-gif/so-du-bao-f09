@@ -1,0 +1,18 @@
+MẪU KHỐI DỮ LIỆU F-09 (dán ngay sau chữ "KHỐI DỮ LIỆU" ở cuối khung hỏi). Các chỗ trong { } là chỗ điền; giữ nguyên mọi chữ khác.
+Chép số y như SSI hiển thị (cột "Thay đổi" chỉ lấy số, không lấy phần trăm; không dùng cột "Đóng cửa ĐC"). Mỗi mã đúng 20 dòng, xếp từ mới nhất đến cũ nhất.
+KIỂM TRƯỚC KHI GỬI: có đủ ba bảng, mỗi bảng 20 dòng, có dòng NGÀY DỮ LIỆU, PHIÊN CẦN DỰ BÁO và CÁC MÃ. Gửi khung hỏi và khối dữ liệu trong CÙNG MỘT tin nhắn.
+
+NGÀY DỮ LIỆU (phiên vừa đóng cửa): {dd/mm/yyyy}
+PHIÊN CẦN DỰ BÁO: {dd/mm/yyyy}
+CÁC MÃ: {MÃ1}, {MÃ2}, {MÃ3}
+
+=== {MÃ1} ===
+Ngày | Thay đổi | Đóng cửa | Mở cửa | Cao nhất | Thấp nhất | Khối lượng khớp
+{dd/mm/yyyy} | {thay đổi} | {đóng cửa} | {mở cửa} | {cao nhất} | {thấp nhất} | {khối lượng khớp}
+... (đủ 20 dòng)
+
+=== {MÃ2} ===
+(cùng khuôn)
+
+=== {MÃ3} ===
+(cùng khuôn)
